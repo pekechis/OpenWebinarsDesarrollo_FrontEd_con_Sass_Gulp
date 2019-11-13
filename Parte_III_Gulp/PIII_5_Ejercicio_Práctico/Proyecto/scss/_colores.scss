@@ -1,0 +1,55 @@
+//// @author Juan Diego Pérez Jiménez @pekechis
+
+// Paletas de colores básica
+
+//Colores generales
+
+/// Color de fondo
+/// @group colores
+$color-background: #FFFFFF;
+
+/// Color de la fuenta
+/// @group colores
+$color-base: #333333;
+
+
+//Colores barra de menú
+/// Color de fondo de la barra de Menú
+/// @group menu
+$navbar-background-color: rgb(155, 111, 145);
+
+/// Color de el texto de los elementos de la barra de menú al pasar el ratón sobre ellos
+/// @group menu
+$navbar-color-hover: $color-background;
+
+/// Colores del borde 
+/// @group cards
+$border-color: $color-base;
+
+/// Colores para los botonos de error
+/// @group botones
+$color-error: #ff0000;
+
+/// Colores para los botonos de warning
+/// @group botones
+$color-warning: rgb(239, 241, 120);
+
+/// Colores para los botonos de aceptación
+/// @group botones
+$color-accepted: rgb(55, 138, 0);
+
+/// Colores para los botonos normales
+/// @group botones
+$color-normal: rgb(0, 110, 255);
+
+/// Colores para la sombra de los  botones al hacer hvoer
+/// @group botones
+$color-shadow: #888;
+
+/// Colores para los columnas pares de las tablas
+/// @group tablas
+$color-col-pares: #cccccc;
+
+/// Colores para los columnas impares de las tablas
+/// @group tablas
+$color-col-impares: #888888;

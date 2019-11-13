@@ -1,0 +1,49 @@
+/*Usando anidamiento crear la hoja de estilos para un menú */
+nav {
+  @include gradient-y(
+    $navbar-background-color-inicio,
+    $navbar-background-color-final
+  );
+  padding: 0.2rem;
+
+  ul {
+    & li {
+      display: inline-block;
+      padding: 0.5rem;
+      position: relative;
+      color: $navbar-color-hover;
+
+      & ul {
+        display: none;        
+      }
+
+      &:hover > ul {
+          display: block;
+          position: absolute; 
+          left: 25%;
+          padding-left: 0px;
+          background-color: transparentize(lighten($navbar-background-color-final,10%),0.5);
+
+          li {
+              width: 100%;
+              padding: 0.5rem;
+          }
+
+          li:hover {
+            background-color: transparentize(lighten($navbar-background-color-final,90%),0.5);
+            color: $text-color;   
+          }
+          
+      }
+
+      &.active,
+      &:hover {
+        font-weight: bolder;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}

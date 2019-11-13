@@ -1,0 +1,11 @@
+$test: false;
+
+body {
+  @if $test {
+    @error "Mensaje de error";
+    @debug "Test tiene el siguiente valor: #{$test}";
+  }
+  else {
+    @warn "Mensaje de warning";
+  }
+}

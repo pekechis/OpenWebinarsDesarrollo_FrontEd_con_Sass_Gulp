@@ -1,0 +1,20 @@
+{
+  "name": "instalacion_gulp",
+  "version": "1.0.0",
+  "description": "Ejemplo de funcionamiento de Gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "gulp",
+    "openwebinars",
+    "sass",
+    "curso"
+  ],
+  "author": "Juan Diego Perez Jimenez",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "plugins_gulp",
+  "version": "1.0.0",
+  "description": "Ejemplos de uso de distintos plugins gulp ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "openwebinars",
+    "sass",
+    "gulp",
+    "curso",
+    "ejemplos"
+  ],
+  "author": "Juan Diego Perez Jimenez @pekechis",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^5.1.0",
+    "delete": "^1.1.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-dart-sass": "^0.9.1",
+    "gulp-dart-scss": "^1.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-processhtml": "^1.2.0",
+    "gulp-rename": "^1.4.0",
+    "sassdoc": "^2.7.1"
+  },
+  "dependencies": {}
+}

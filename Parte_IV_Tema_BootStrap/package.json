@@ -1,0 +1,26 @@
+{
+  "name": "tema_bootstrap_curso_openwebinars",
+  "version": "1.0.0",
+  "description": "Gulp para la construcción de un nuevo tema BootStrap partiendo de las fuentes. Dentro de el curso Desarrollo FrontEnd profesional.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "curso",
+    "gulp",
+    "openwebinars",
+    "tema",
+    "bootstrap"
+  ],
+  "author": "@pekechis",
+  "license": "ISC",
+  "devDependencies": {
+    "delete": "^1.1.0",
+    "gulp": "^4.0.2",
+    "gulp-dart-scss": "^1.0.1",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-processhtml": "^1.2.0",
+    "gulp-rename": "^1.4.0"
+  }
+}

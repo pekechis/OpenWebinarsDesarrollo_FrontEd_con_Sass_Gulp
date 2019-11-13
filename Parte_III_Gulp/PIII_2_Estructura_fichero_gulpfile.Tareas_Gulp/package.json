@@ -1,0 +1,22 @@
+{
+  "name": "miprimergulfile",
+  "version": "1.0.0",
+  "description": "Ejemplo de fichero gulfille.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "openwebinars",
+    "curso",
+    "gulp",
+    "sass",
+    "frontend",
+    "profesional"
+  ],
+  "author": "Juan Diego Perez @pekechis",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}

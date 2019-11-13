@@ -1,0 +1,10 @@
+
+.text-center {
+    text-align: center;
+}
+
+@for $i from 0 through 4 {
+    .p-#{$i} {
+        padding: (0.5*$i)+rem;
+    }
+}

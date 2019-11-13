@@ -1,0 +1,64 @@
+/// @author Juan Diego Perez Jimenez @pekechis
+
+/// Mixin para crear un gradiente de la izquierda a la derecha
+/// @parameter {color} $color-inicio -- Color inicial para el gradiente
+/// @parameter {color} $color-final -- Color final para el gradiente
+/// @parameter {float} $inicio -- Porcentaje de la anchura donde empieza el cambio
+/// @parameter {float} $final -- Porcentaje de la anchura donde empieza el cambio
+@mixin gradient-x($color-inicio, $color-final,$inicio : 0% ,$final : 80%) {
+    background-image: linear-gradient(right,$color-inicio $inicio,$color-final $final);
+}
+
+/// Mixin para crear un gradiente de arriba a abajo
+/// @parameter {color} $color-inicio -- Color inicial para el gradiente
+/// @parameter {color} $color-final -- Color final para el gradiente
+/// @parameter {float} $inicio -- Porcentaje de la altura donde empieza el cambio
+/// @parameter {float} $final -- Porcentaje de la altura donde empieza el cambio
+@mixin gradient-y($color-inicio, $color-final,$inicio : 0% ,$final : 80%) {
+    background-image: linear-gradient(to bottom,$color-inicio $inicio,$color-final $final);
+}
+
+/// Mixin para dar estilos al elemento principal, la fila de la maquetación
+/// @group layout
+@mixin flex_mixin {
+    display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox; /* TWEENER - IE 10 */
+    display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+
+  /// Mixin para escalar un elemento
+  /// @parameter {integer} $factor -- Factor para escalar el elemento
+  @mixin escalar($factor) {
+    transform: scale($factor,$factor);
+  }
+
+  /// Mixin para girar un element
+  /// @parameter {integer} $grados -- Cantidad de grados que vamos a girar un elemento
+  @mixin girar($grados) {
+      transform: rotate(#{$grados+"deg"});
+  }
+
+  /// Mixin para establecer la duración de las transformaciones que afectan a un elemento
+  /// @parameter {float} $duration -- Número de segundo que dura la animación
+@mixin setDuration($duration) {
+    transition-duration: #{$duration+"s"};
+}
+
+  /// Mixin para posicionado de un elemento en el centro de la página
+  @mixin centrado() {
+        margin: 0 auto;
+  }
+
+  /// Mixin para añadir un border determinado de un color y con una anchura da
+  /// @parameter {integer} $anchura -- Anchura en píxeles del borde a añadir
+  /// @parameter {color} $color -- Color del borde a añadir
+  @mixin addBorder($anchura,$color) {
+      border: #{$anchura+"px"} solid #{$color};
+  }
+
+  
+

@@ -1,0 +1,19 @@
+
+
+
+ul.iconized {
+    list-style-type: none;
+    margin: 0px;
+
+    li {
+        padding: $list-padding;
+
+      &::before {
+        font-family: 'FontAwesome';
+        content: "\f188"
+      } 
+       
+        
+    }
+}
+

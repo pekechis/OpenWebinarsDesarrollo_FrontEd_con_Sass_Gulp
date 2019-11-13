@@ -1,0 +1,18 @@
+%btn {
+  border-radius: 2px;
+  color: #fff;
+  padding: 5px 0;
+  margin: 2px auto;
+  text-align: left;
+  width: 150px;
+}
+
+.btn-error {
+  @extend %btn;
+  background-color: #f00;
+}
+
+.btn-ok {
+  @extend %btn;
+  background-color: #0f0;
+}

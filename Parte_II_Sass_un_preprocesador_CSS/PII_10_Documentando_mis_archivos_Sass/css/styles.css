@@ -1,0 +1,13 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  background-color: #00aa00;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+}
+.btn:hover {
+  background-color: rgba(0, 170, 0, 0.8);
+}
+
+/*# sourceMappingURL=styles.css.map */

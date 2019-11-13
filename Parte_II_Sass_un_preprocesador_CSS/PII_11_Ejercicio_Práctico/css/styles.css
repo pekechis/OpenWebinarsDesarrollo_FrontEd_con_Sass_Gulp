@@ -1,0 +1,195 @@
+@charset "UTF-8";
+@import "vendors/normalize.css";
+@import "vendors/font-awesome.min.css";
+.text-center {
+  text-align: center;
+}
+
+.p-0 {
+  padding: 0rem;
+}
+
+.p-1 {
+  padding: 0.5rem;
+}
+
+.p-2 {
+  padding: 1rem;
+}
+
+.p-3 {
+  padding: 1.5rem;
+}
+
+.p-4 {
+  padding: 2rem;
+}
+
+/*Estilos para el contenedor general de mi página*/
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.row {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  flex-direction: row;
+}
+
+.row > .col-1 {
+  width: 12.5%;
+}
+
+.row > .col-2 {
+  width: 25%;
+}
+
+.row > .col-3 {
+  width: 37.5%;
+}
+
+.row > .col-4 {
+  width: 50%;
+}
+
+.row > .col-5 {
+  width: 62.5%;
+}
+
+.row > .col-6 {
+  width: 75%;
+}
+
+.row > .col-7 {
+  width: 87.5%;
+}
+
+.row > .col-8 {
+  width: 100%;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+}
+.btn:hover {
+  box-shadow: 0.5rem 0.5rem #888;
+}
+.btn:active {
+  color: white;
+}
+
+.btn-error {
+  background-image: linear-gradient(to bottom, #ff0000 70%, #333333 100%);
+}
+
+.btn-warning {
+  background-image: linear-gradient(to bottom, #eff178 70%, #333333 100%);
+}
+
+.btn-accepted {
+  background-image: linear-gradient(to bottom, #378a00 70%, #333333 100%);
+}
+
+.btn-normal {
+  background-image: linear-gradient(to bottom, #006eff 70%, #333333 100%);
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 1rem;
+}
+
+tbody tr td:nth-child(1) {
+  background-color: #888888;
+}
+
+tbody tr td:nth-child(2) {
+  background-color: #cccccc;
+}
+
+tbody tr td:nth-child(3) {
+  background-color: #888888;
+}
+
+tbody tr td:nth-child(4) {
+  background-color: #cccccc;
+}
+
+tbody tr td:nth-child(5) {
+  background-color: #888888;
+}
+
+tbody tr td:nth-child(6) {
+  background-color: #cccccc;
+}
+
+tbody tr td:nth-child(7) {
+  background-color: #888888;
+}
+
+tbody tr td:nth-child(8) {
+  background-color: #cccccc;
+}
+
+tbody tr td:nth-child(9) {
+  background-color: #888888;
+}
+
+/*Usando anidamiento crear la hoja de estilos para un menú */
+nav {
+  background-color: #9b6f91;
+  padding: 0.2rem;
+}
+nav ul li {
+  display: inline-block;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+nav ul li.active {
+  color: #FFFFFF;
+  font-weight: bolder;
+}
+nav ul li:hover {
+  color: #FFFFFF;
+}
+nav ul li a {
+  text-decoration: none;
+}
+
+figure.card {
+  border: 0.1rem solid #333333;
+  border-radius: 1rem;
+  display: inline-block;
+  padding: 1rem;
+}
+figure.card img {
+  border-radius: 2rem;
+  width: 100%;
+}
+figure.card img:hover {
+  transition: linear 3s;
+  transform: rotate(360deg);
+}
+figure.card figcaption {
+  font-size: 0.8rem;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+/*# sourceMappingURL=styles.css.map */

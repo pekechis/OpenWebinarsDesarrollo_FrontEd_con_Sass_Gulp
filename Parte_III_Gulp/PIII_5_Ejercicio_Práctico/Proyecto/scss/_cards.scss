@@ -1,0 +1,23 @@
+figure.card {
+    border: $border-width #{$border-style} $border-color;
+    border-radius: $border-radius;
+    display: inline-block;
+    padding: 1rem;
+
+     img {
+        border-radius: $boder-radius-big; 
+        width: 100%;
+
+        &:hover {
+            @include duration(3);
+            @include girar(1);
+        }
+     }
+
+     figcaption {
+         font-size: 0.8rem;
+         margin: 0.5rem;
+         text-align: center;
+     }
+
+}

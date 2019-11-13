@@ -1,0 +1,14 @@
+//// @access public
+//// @author pekechis
+
+/// @group colores
+/// @parameter {color} $color - Valor del color que quiero hacer más transparente
+/// @parameter {float} $transparencia - Valor de la transparencia de -1 a 1. Añade ese valor al canal alfa
+/// @return {color}
+/// @example scss - Función Aclarar
+/// background-color: aclarar(#00AA00, -0.2);
+/// rgba(0, 170, 0, 0.8);
+
+@function aclarar($color, $transparencia) {
+  @return adjust-color($color, $alpha: $transparencia);
+}

@@ -1,0 +1,31 @@
+.header {
+  background-color: #bbbbbb;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+a:hover {
+  color: #f00;
+}
+a:visited {
+  color: #00f;
+}
+a:active {
+  color: #0f0;
+}
+
+.btn-error {
+  background-color: #f00;
+}
+
+.container {
+  background-image: url("images/fondos/default.png");
+}
+
+/* 
+    Web desarrollada por OpenWebinars
+*/
+
+/*# sourceMappingURL=basicos.css.map */

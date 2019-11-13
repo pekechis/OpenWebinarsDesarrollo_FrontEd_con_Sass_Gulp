@@ -1,0 +1,12 @@
+//// @access public
+///  @author @pekechis
+
+/// Mixin para fijar bordes redondeados y que contenga todos los
+/// prefijos de los navegadores
+/// @parameter {integer} $radius-size -- Tamaño del radio
+/// @parameter {string} $unit -- Unidad de medida del tamaño (em, rem, px ..)
+@mixin btn-radius($radius-size, $unit) {
+  -moz-border-radius: #{$radius-size}#{$unit};
+  -webkit-border-radius: #{$radius-size}#{$unit};
+  border-radius: #{$radius-size}#{$unit};
+}

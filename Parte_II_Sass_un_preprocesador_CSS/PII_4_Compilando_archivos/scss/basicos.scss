@@ -1,0 +1,55 @@
+// Variables de colores
+$grey: #bbbbbb;
+$header-background : $grey;
+$link-normal: #000;
+$link-hover: #f00;
+$link-visited: #00f;
+$link-active: #0f0;
+$white: #fff;   
+
+.header {
+    background-color: $header-background;
+}
+
+//Anidamiento básico para enlaces
+a {
+    color: $link-normal;
+    text-decoration: none;
+    &:hover {
+        color: $link-hover;
+    }
+    &:visited {
+        color: $link-visited;
+    }
+    &:active {
+        color: $link-active;
+    }
+}
+
+
+// Interpolación en selectores
+$button-type: "error";
+$btn-color : #f00;
+
+.btn-#{$button-type} {
+    background-color:  $btn-color;
+}
+
+//Interpolación en el uso de funciones
+$fondo :  "images/fondos/default.png";
+
+.container {
+  
+  background-image: url('#{$fondo}');
+  
+}
+
+//Interpolación en comentarios
+$autor: "OpenWebinars";
+
+/* 
+    Web desarrollada por #{$autor}
+*/
+
+
+

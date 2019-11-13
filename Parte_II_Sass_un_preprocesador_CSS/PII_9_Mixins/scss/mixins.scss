@@ -1,0 +1,60 @@
+@mixin centrado {
+  margin: 0px auto;
+}
+
+@mixin highlighted-link {
+  a {
+    background-color: yellow;
+    font-style: italic;
+    text-decoration: none;
+  }
+}
+
+.header {
+  @include centrado;
+
+  background-color: black;
+  color: white;
+}
+
+@include highlighted-link;
+
+// Mixin con anidamiento
+@mixin centrado_menu {
+  @include centrado;
+
+  background-color: #666;
+  color: white;
+  height: 3rem;
+}
+
+.main_menu {
+  @include centrado_menu();
+}
+
+//Mixin con parámetro
+@mixin girar($grados) {
+  -webkit-transfrom: rotate(#{gradosdeg}deg);
+  -ms-transform: rotate(#{gradosdeg}deg);
+  transform: rotate(#{gradosdeg}deg);
+}
+
+.side_tile {
+  @include girar(90);
+
+  color: #f00;
+}
+
+@mixin logo($image, $radio: 10px) {
+  background-image: url("#{$image}");
+  background-position: center;
+  border-radius: $radio;
+}
+
+.logo-cuadrado {
+  @include logo("img/milogocuadrado.png", 0px);
+}
+
+.logo-redondeado {
+  @include logo("img/milogoredondeado.png");
+}

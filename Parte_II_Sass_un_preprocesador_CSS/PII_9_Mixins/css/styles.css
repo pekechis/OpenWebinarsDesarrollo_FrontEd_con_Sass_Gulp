@@ -1,0 +1,39 @@
+.header {
+  margin: 0px auto;
+  background-color: black;
+  color: white;
+}
+
+a {
+  background-color: yellow;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.main_menu {
+  margin: 0px auto;
+  background-color: #666;
+  color: white;
+  height: 3rem;
+}
+
+.side_tile {
+  -webkit-transfrom: rotate(gradosdegdeg);
+  -ms-transform: rotate(gradosdegdeg);
+  transform: rotate(gradosdegdeg);
+  color: #f00;
+}
+
+.logo-cuadrado {
+  background-image: url("img/milogocuadrado.png");
+  background-position: center;
+  border-radius: 0px;
+}
+
+.logo-redondeado {
+  background-image: url("img/milogoredondeado.png");
+  background-position: center;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=styles.css.map */

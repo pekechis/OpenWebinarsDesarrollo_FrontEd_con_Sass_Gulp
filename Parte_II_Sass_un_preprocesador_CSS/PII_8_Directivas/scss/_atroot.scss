@@ -1,0 +1,6 @@
+.item {
+  color: black;
+  @at-root #{&}.is-active {
+    color: blue;
+  }
+}

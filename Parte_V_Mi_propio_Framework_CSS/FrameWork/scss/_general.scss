@@ -1,0 +1,20 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: $text-color;
+    font-family: $base-font-family;
+    margin: 0px;
+    
+}
+
+// Reglas para las cabeceras
+@for $i from 1 through 6  {
+    h#{$i} {
+        font-family: $header-font-family;;
+    }
+}
+
+

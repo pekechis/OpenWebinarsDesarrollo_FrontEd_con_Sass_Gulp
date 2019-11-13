@@ -1,0 +1,65 @@
+
+
+form {
+    width: $form-width;
+    padding: 1rem;
+
+}
+
+
+
+input, select,  textarea , button {
+    display: block;
+    width: $form-width;
+    margin-bottom: 1rem;
+}
+
+
+
+label {
+    display: block;
+    font-size: 1.2rem;
+}
+
+
+fieldset {
+    border: 0px;
+    padding: 0px;
+}
+
+
+/// Mapa del que cogeremos los nombres para interpolarlos y los valores de los colores
+/// @group form
+$btn-colors: (
+  "error": $color-error,
+  "warning": $color-warning,
+  "accepted": $color-accepted,
+  "normal": $color-normal
+);
+
+//Elemento botón general
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  border-radius: $form-border-radius !important;
+  padding: 0.5rem;
+
+  &:hover {
+    box-shadow: $form-border-radius/2 $form-border-radius/2 $color-shadow !important;    
+  }
+
+  &:active {    
+    color: white !important;
+    
+  }
+}
+
+//Clase adicional que le da color
+@each $k, $v in $btn-colors {
+  .btn-#{$k} {
+    background-color: $v;
+    color: white;
+    font-weight: bolder;
+  }
+}

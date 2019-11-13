@@ -1,0 +1,28 @@
+//Estilos genreales para la tabla
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th,
+  td {
+    border: 1px solid black;
+    padding: 1rem;
+  }
+
+//Establezco el número máximo de columnas
+
+/// Columna de inicio para las tablas
+/// @group tablas
+$inicio: 1;
+
+/// Columna de finalización para las tablas
+/// @group tablas
+$fin: 10;
+
+
+@for $num from $inicio to $fin {
+  tbody tr td:nth-child(#{$num}) {
+    background-color: colum-color($num);
+  }
+}

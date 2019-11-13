@@ -1,0 +1,39 @@
+body {
+  background-color: #ddd;
+  color: #00f;
+}
+
+.container {
+  widows: 80%;
+  margin: 0px auto;
+}
+.container .row {
+  padding: 20px;
+}
+
+.btn-ok,
+.btn-error {
+  border-radius: 2px;
+  color: #fff;
+  padding: 5px 0;
+  margin: 2px auto;
+  text-align: left;
+  width: 150px;
+}
+
+.btn-error {
+  background-color: #f00;
+}
+
+.btn-ok {
+  background-color: #0f0;
+}
+
+.item {
+  color: black;
+}
+.item.is-active {
+  color: blue;
+}
+
+/*# sourceMappingURL=styles.css.map */

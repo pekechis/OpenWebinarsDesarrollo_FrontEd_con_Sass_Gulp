@@ -1,0 +1,35 @@
+{
+  "name": "ejercicio_practico_curso_openwebinars_workflow_gulp",
+  "version": "1.0.0",
+  "description": "Ejercicio práctica para crear un flujo de trabajo básico para FrontEnd utilizando la herramienta Gulp.js",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "curso",
+    "workflow",
+    "gulp",
+    "sass",
+    "openwebinars"
+  ],
+  "author": "Juan Diego Perez Jimenez @pekechis",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^5.1.0",
+    "delete": "^1.1.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-dart-scss": "^1.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-processhtml": "^1.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-ssh": "^0.7.0",
+    "path": "^0.12.7",
+    "sassdoc": "^2.7.1"
+  }
+}

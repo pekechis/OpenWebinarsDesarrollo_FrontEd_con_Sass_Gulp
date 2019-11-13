@@ -1,0 +1,51 @@
+//Les doy un tamaño y un borde para distinguirlos
+//Sólo válida para el ejemplo
+//Padre de cada fila
+.row {
+  @include flex_mixin;
+}
+
+/// Número de elementos máximos que voy a tener a lo ancho del layout
+/// @group layout
+$num_elementos: 8;
+
+/// Mapa con los distintos breakpoints
+/// @group layout
+$breakpoints: (
+  "sm": 576px,
+  "md": 768px,
+  "lg": 992px
+);
+
+//Generales si no pongo nada
+@for $i from 1 through $num_elementos {
+  .row > .col-#{$i} {
+    flex: 0 0 #{anchura_col($i)}+ "%";
+    max-width: #{anchura_col($i)}+ "%";
+  }
+}
+
+
+
+@each $k, $v in $breakpoints {
+  @media (min-width: #{$v}) {
+    //Bucle para generar las clases de las columnas responsivas
+    @for $i from 1 through $num_elementos {
+      .row > .col-#{$k+"-"+$i} {
+        flex: 0 0 #{anchura_col($i)}+ "%";
+        max-width: #{anchura_col($i)}+ "%";
+      }
+    }
+  }
+}
+
+
+
+.row > * {
+  padding: $gutter;
+}
+
+.container {
+  max-width: $max-container-width;
+  @include centrado();
+}

@@ -1,0 +1,472 @@
+<!--
+     Course: Componentes de BootStrap 4
+     By: OpenWebinars.net
+     File: proyecto.html
+     Author: Juan Diego Pérez Jiménez @pekechis
+     Date: January 2018
+     Descripción: Proyecto para el curso de Componente con BootStrap
+-->
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>
+      Proyecto práctico para el curso de Componentes con BootStrap 4
+    </title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Course CSS -->
+    <link rel="stylesheet" ref="styles.css" />
+
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+  </head>
+
+  <body>
+    <main class="container-fluid">
+      <!-- ALERTA -->
+      <!-- Le pongo fixed-bottom para que no haya conflicto con el menú -->
+      <div class="alert alert-dismissible fade show alert-danger fixed-bottom">
+        Aviso de Cookies: ¿Te has enterado?
+        <button type="button" class="close" data-dismiss="alert">
+          <span>X</span>
+        </button>
+      </div>
+
+      <!--MENU PRINCIPAL-->
+      <header class="row">
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+          <a class="navbar-brand" href="#"
+            ><img src="img/logo-openwebinars.png"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav">
+              <li class="nav-item active">
+                <a href="#" class="nav-link">Inicio</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                  >Noticias</a
+                >
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Últimas noticias</a>
+                  <a class="dropdown-item" href="#">Noticias Destacadas</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                  >Nosotros</a
+                >
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">La Empresa</a>
+                  <a class="dropdown-item" href="#">Trabaja con Nosotros</a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                  >Contacto</a
+                >
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">¿Dónde estamos?</a>
+                  <a class="dropdown-item" href="#">Servicio al cliente</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <form class="form-inline">
+            <input
+              class="btn btn-primary btn-sm mr-2"
+              data-toggle="modal"
+              data-target="#entrar"
+              type="button"
+              value="Login"
+            />
+            <input
+              class="btn btn-primary btn-sm"
+              data-toggle="modal"
+              data-target="#registro"
+              type="button"
+              value="Registro"
+            />
+          </form>
+        </nav>
+      </header>
+      <!-- CARRUSEL -->
+      <section class="row justify-content-center mt-5">
+        <div class="col-md-9 mt-3">
+          <div class="carousel slide" id="carrusel" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  class="w-100 d-block"
+                  src="img/c1.jpg"
+                  alt="Primer elemento"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="w-100 d-block"
+                  src="img/c2.jpg"
+                  alt="Segundo elemento"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="w-100 d-block"
+                  src="img/c3.jpg"
+                  alt="Tercer elemento"
+                />
+              </div>
+              <div class="carousel-item">
+                <img
+                  class="w-100 d-block"
+                  src="img/c4.jpg"
+                  alt="Cuarto elemento"
+                />
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carrusel" data-slide="prev">
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carrusel" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+              <span class="sr-only">Posterior</span>
+            </a>
+            <ol class="carousel-indicators">
+              <li data-target="#carrusel" data-slide-to="0" class="active"></li>
+              <li data-target="#carrusel" data-slide-to="1"></li>
+              <li data-target="#carrusel" data-slide-to="2"></li>
+              <li data-target="#carrusel" data-slide-to="3"></li>
+            </ol>
+          </div>
+        </div>
+      </section>
+
+      <header class="row bg-dark justify-content-center mt-3 mb-3">
+        <h1 class="text-capitalize text-white">Curso ofertados</h1>
+      </header>
+
+      <!-- CARD -->
+      <section class="row justify-content-around">
+        <div class="col-sm-3">
+          <div class="card">
+            <a
+              href="#"
+              data-toggle="tooltip"
+              data-html="true"
+              title="Apúntate, es gratis el primer mes"
+            >
+              <img src="img/php_logo.png" class="card-img-top" />
+            </a>
+            <div class="card-body">
+              <h3 class="card-title">Curso PHP</h3>
+              <h5 class="card-subtitle mb-3">Haz tu web de manera fácil</h5>
+              <div class="card-text">
+                PHP es el lenguaje de programación más usado para hacer páginas
+                Web.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <a
+              href="#"
+              data-toggle="tooltip"
+              data-html="true"
+              title="Apúntate, es gratis el primer mes"
+            >
+              <img src="img/mysql.png" class="card-img-top" />
+            </a>
+            <div class="card-body">
+              <h3 class="card-title">Curso MySQL</h3>
+              <h5 class="card-subtitle mb-3">Todo la potencia de SQL.</h5>
+              <div class="card-text">
+                MySQL pone la potencia de las bases de datos relacionales a tu
+                alcance.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <a
+              href="#"
+              data-toggle="tooltip"
+              data-html="true"
+              title="Apúntate, es gratis el primer mes"
+            >
+              <img src="img/jquery.png" class="card-img-top" />
+            </a>
+            <div class="card-body">
+              <h3 class="card-title">Curso jQuery</h3>
+              <h5 class="card-subtitle mb-3">Da vida a tu Web</h5>
+              <div class="card-text">
+                jQuery te permite dar vida a tu página web de una manera fácil y
+                sencilla.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <header class="row bg-dark justify-content-center mt-3 mb-3">
+        <h1 class="text-capitalize text-white">
+          ¿Quieres hablar con nosotros?
+        </h1>
+      </header>
+
+      <!-- LIST GROUP COMO TAB-PANEL -->
+      <section class="row justify-content-center">
+        <div class="col-md-5">
+          <div class="list-group">
+            <a
+              class="list-group-item list-group-item-action active"
+              data-toggle="list"
+              data-target="#contactar"
+              >Contactar</a
+            >
+            <a
+              class="list-group-item list-group-item-action "
+              data-toggle="list"
+              data-target="#sugerencia"
+              >Sugerencia</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              data-toggle="list"
+              data-target="#empresas"
+              >Empresas</a
+            >
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="tab-content">
+            <div class="tab-pane fade show active" id="contactar">
+              <form>
+                <div class="form-group">
+                  <label>Email:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Introduce tu correo"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Tu problema:</label>
+                  <textarea class="form-control" rows="6"></textarea>
+                </div>
+                <div class="text-right">
+                  <input type="submit" class="btn btn-primary" value="Enviar" />
+                </div>
+              </form>
+            </div>
+            <div class="tab-pane fade" id="sugerencia">
+              <form>
+                <div class="form-group">
+                  <label>Email:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Introduce tu correo"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Tu Sugerencia:</label>
+                  <textarea class="form-control" rows="6"></textarea>
+                </div>
+                <div class="text-right">
+                  <input type="submit" class="btn btn-primary" value="Enviar" />
+                </div>
+              </form>
+            </div>
+            <div class="tab-pane fade" id="empresas">
+              <form>
+                <div class="form-group">
+                  <label>Nombre de la empresa:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Introduce el nombre de la empresa"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Email:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Correo electrónico de contacto"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>¿En qué podemos ayudarte?:</label>
+                  <textarea class="form-control" rows="6"></textarea>
+                </div>
+                <div class="text-right">
+                  <input type="submit" class="btn btn-primary" value="Enviar" />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PIE DE PÁGINA  -->
+      <footer class="row bg-dark justify-content-center mt-3 p-3">
+        <h5 class="text-center text-white">
+          Openwebinars.net Todos los derechos reservados
+        </h5>
+      </footer>
+
+      <!-- VENTANA MODAL DE LOGIN -->
+      <section class="modal" id="entrar">
+        <div class="modal-dialog" >
+          <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+              <div class="modal-title">
+                Entra en sesión
+              </div>
+              <span data-dismiss="modal">X</span>
+            </div>
+            <form>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label>Email:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Introduce tu email"
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Contraseña:</label>
+                  <input
+                    type="password"
+                    class="form-control"
+                    placeholder="Introduce tu contraseña"
+                  />
+                </div>
+              </div>
+              <div class="modal-footer text-right">
+                <input type="submit" class="btn btn-primary" value="Entrar" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- VENTANA MODAL DE REGISTRO -->
+      <section class="modal" id="registro">
+        <div class="modal-dialog">
+          <form>
+            <div class="modal-content">
+              <div class="modal-header bg-primary text-white">
+                <div class="modal-title">
+                  Registro de usuario
+                </div>
+                <span data-dismiss="modal">X</span>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                  <label>Nombre:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Introduce tu nombre"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Apellidos:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Introduce tus apellidos"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Email:</label>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="Introduce tu correo electrónico"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Contraseña:</label>
+                  <input type="password" class="form-control" required />
+                </div>
+                <div class="form-group">
+                  <label>Sexo:</label>
+                  <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-warning">
+                      <input type="radio" name="sexo" id="V" />Hombre
+                    </label>
+                    <label class="btn btn-warning">
+                      <input type="radio" name="sexo" id="M" />Mujer
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="modal-footer text-right">
+                <input
+                  type="submit"
+                  class="btn btn-primary"
+                  value="Registrar"
+                />
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- SCRIPT PARA QUE FUNCIONEN DETERMINADOS COMPONENTES -->
+    <script>
+      $(function() {
+        //Habilita los tooltips
+        $('[data-toggle="tooltip"]').tooltip({
+          container: "body"
+        });
+      });
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../BootStrap/dist/js/bootstrap.js"></script>
+  </body>
+</html>

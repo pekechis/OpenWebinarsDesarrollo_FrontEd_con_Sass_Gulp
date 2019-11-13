@@ -1,0 +1,11 @@
+$top_margin: 0px;
+$row_padding: 20px;
+
+.container {
+  widows: 80%;
+  margin: $top-margin auto;
+
+  .row {
+    padding: $row_padding;
+  }
+}

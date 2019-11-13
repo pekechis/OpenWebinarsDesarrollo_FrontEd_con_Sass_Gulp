@@ -1,0 +1,10 @@
+.btn {
+  display: inline-block;
+  text-align: center;
+  background-color: $btn-background-default;
+  @include btn-radius(1, "em");
+
+  &:hover {
+    background-color: aclarar($btn-background-default, -0.2);
+  }
+}

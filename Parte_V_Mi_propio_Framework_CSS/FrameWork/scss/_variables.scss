@@ -1,0 +1,136 @@
+//// @author Juan Diego Pérez
+
+
+//-------------ELEMENTOS GENERALES-----------------------
+
+/// Tipo de letra general
+/// @group general 
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Lato&display=swap');
+$base-font-family: 'Lato', 'san-serif';
+
+
+/// Tipo de letra para las cabeceras
+/// @group general
+$header-font-family: 'Bowlby One SC', cursive;
+
+
+/// Color del texto de la página
+/// @group general
+$text-color: #333;
+
+
+//-------------------------------SISTEMA_LAYOUT----------------------//
+
+/// Padding para la separación entre las distintas columnas @guter
+/// @group layout
+$gutter: 1rem;
+
+/// Anchura del contenedor principal
+/// @group layout
+$max-container-width: 95%;
+
+//----------------------- TABLAS------------------------------------------//
+
+/// Color de fondo de cabecera de las tablas
+/// @group tables
+$table-header-background-color:  #333;
+
+/// Color del texto en la cabecera de las tablas
+/// @group tables
+$table-header-color: #FFF;
+
+/// Color de fondo para las filas impares
+/// @group tables
+$table-even-rows-background-color:  rgb(180, 179, 179);
+
+/// Color de fondo para las filas pares:
+/// @group tables
+$table-odd-rows-background-color: #DDD;
+
+/// Color de fondo para las filas cuando pasamos el ratón por encima
+/// @group tables
+$table-hover-background-color: rgb(127, 164, 209);
+
+
+/// Anchura del borde inferior de las filas
+/// @group tables
+$table-row-bottom-border-width: 0.2rem;
+
+
+/// Color de fondo de la tabla 
+/// @group tables
+$table-border-color: $text-color;
+
+/// Tamaño de letra en el cuerpo de las tablas
+/// @group tables
+$table-body-font-size: 0.8rem;
+
+
+//------------------------------------------------LISTAS-------------------------------------------//
+
+/// Icono de la librería Font-Awesome que usaremos como icono de lista
+/// @group lists
+$list-icon-fontawesome: "<i class='fa fa-caret-right'></i>";
+
+/// Separación entre los items de las lista "iconizadas" y el border
+$list-padding: 1rem;
+
+
+
+//------------------------------------------------IMÁGENES-------------------------------------//
+
+
+$img-border-radius: 0.5rem;
+$figure-border-radius: $img-border-radius;
+
+//-----------------------------------------------FORMULARIOS--------------------------------//
+
+
+/// Anchura de los formularios dentro de su contenedor padre
+/// @group forms
+$form-width: 100%;
+
+/// Radio para el redondeado de los elementos de los formularios
+/// @group forms
+$form-elements-radius: 0.2rem;
+
+/// Colores para los botonos de error
+/// @group forms
+$color-error: #ff0000;
+
+/// Colores para los botonos de warning
+/// @group forms
+$color-warning: rgb(239, 241, 120);
+
+/// Colores para los botonos de aceptación
+/// @group forms
+$color-accepted: rgb(55, 138, 0);
+
+/// Colores para los botonos normales
+/// @group forms
+$color-normal: rgb(0, 110, 255);
+
+/// Colores para la sombra de los  botones al hacer hvoer
+/// @group forms
+$color-shadow: #888;
+
+
+/// Redondeo en los border para los elementos del formulario
+/// @groups forms
+$form-border-radius: 0.2rem;
+
+
+//-----------------------------------------------MENÚ-------------------------------------------/
+
+/// Color de Inicio para el gradiente vertical del menú
+/// @group menu
+$navbar-background-color-inicio: #000;
+
+/// Color final para el gradiente vertical del menú
+/// @group menu
+$navbar-background-color-final: lighten($text-color,20%);
+
+/// Color de texto cuando pasamos el ratón por los elementos del menú
+/// @group
+$navbar-color-hover: #FFF;
+

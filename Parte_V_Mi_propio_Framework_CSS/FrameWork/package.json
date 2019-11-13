@@ -1,0 +1,35 @@
+{
+  "name": "mini_framework_css_openwebinars",
+  "version": "1.0.0",
+  "description": "Versión mínima de una framework CSS para el curso de OpenWebinars de Desarrollo FrontEnd profesional con Sass.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "curso",
+    "openwebinars",
+    "framework",
+    "sass",
+    "gulp"
+  ],
+  "author": "Juan Diego Perez Jimenez @pekechis",
+  "license": "ISC",
+  "devDependencies": {
+    "del": "^5.1.0",
+    "delete": "^1.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-dart-sass": "^0.9.1",
+    "gulp-dart-scss": "^1.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-image-optimize": "0.0.3",
+    "gulp-pleeease": "^2.0.2",
+    "gulp-processhtml": "^1.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-ssh": "^0.7.0",
+    "path": "^0.12.7",
+    "sassdoc": "^2.7.1"
+  }
+}
