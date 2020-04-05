@@ -38,7 +38,7 @@ La lista es larga, evoluciona constantemente pero para las tareas relacionadas c
 - **path:** Trabajar con rutas a ficheros y/o directorios.
 - **gulp-image-optimize:** Para optimizar el tamaño de los ficheros de image.
 - **gulp-pleease:** Postproceso de ficheros CSS.
-- **sassdocs:** Documentación de ficheros SCSS utilizando ficheros SassDoc.
+- **sassdoc:** Documentación de ficheros SCSS utilizando ficheros SassDoc.
 - **gulp-ssh:** Para gestionar conexiones y transferencias sftp o ssh.
 
 Existen, por supuesto, muchas más y sobre todos son interesantes para el desarrollo Front-End aquellas relacionadas con JavaScript, pero el desarrollo JavaScript queda fuera del alcance de este curso.
