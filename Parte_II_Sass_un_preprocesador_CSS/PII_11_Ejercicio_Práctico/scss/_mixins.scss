@@ -24,7 +24,7 @@
 /// @parameter {integer} $num_segundos - Número de segundos que va a durar la animación
 /// @group cards
 @mixin duration($num_segundos) {
-  transition: linear #{$num_segundos};
+  transition: linear #{$num_segundos + s};
 }
 
 /// Mixin para establecer en un elemento una animación de un número determinado de vueltas
